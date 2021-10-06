@@ -1,6 +1,6 @@
 # Assignment 3: Making Beat Saber in Unity
 
-**Due: Tuesday, October 12, 10:00pm CDT**
+**Due: Tuesday, October 19, 10:00pm CDT**
 
 [Beat Saber](https://beatsaber.com/) is widely considered to be one of the best and most successful virtual reality games. There is a free demo available for the Oculus Quest, which you can find in the official store app. Before beginning this assignment, I suggest that you download this demo or watch some videos on YouTube to familiarize yourself with the gameplay.
 
