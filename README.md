@@ -4,7 +4,7 @@
 
 [Beat Saber](https://beatsaber.com/) is widely considered to be one of the best and most successful virtual reality games. There is a free demo available for the Oculus Quest, which you can find in the official store app. Before beginning this assignment, I suggest that you download this demo or watch some videos on YouTube to familiarize yourself with the gameplay.
 
-In this assignment, you will be implementing Beat Saber's core mechanics. You can use Unity's built-in 3D objects (e.g. cubes) for this assignment, and you do not need to import custom meshes. If you want to make your game more interesting, you are also free to import additional assets. You can also modify any of the colors, textures, or lighting in the scene. Creativity is encouraged! However, note that your grade will be based on the interaction functionality, not the artistic quality of the game.
+In this assignment, you will be implementing Beat Saber's core mechanics. You can use Unity's built-in 3D objects (e.g. cubes) for this assignment, and you do not need to import custom meshes. If you want to make your game more interesting, you are also free to import additional assets or modify the appearance of the scene. Creativity is encouraged! However, note that your grade will be based on the interaction functionality, not the artistic quality of the game.
 
 ## Submission Information
 
@@ -26,14 +26,14 @@ Clone the assignment using GitHub Classroom.  The project has been configured fo
 
 Graded out of 10 points. 
 
-1. Make a single cube that starts at the far end of the room and moves towards the user's start position.  Adjust the size and velocity so that it provides an appropriate challenge.  (1)
-2. When the user hits a cube with a laser sword, the cube should be destroyed.  (1)
-3. When the cube is destroyed, the user should be awarded points that 
-4. Create a `CubeSpawner` that creates new cubes at random time intervals between 0.5 and 2.0 seconds.  You can feel free adjust these time thresholds to reach an appropriate difficulty.  The cubes should also start at the far end of the room, fly towards the user, and should be destroyed when hit by a laser sword. (2)
+1. Make a single cube that starts at the far end of the room and moves towards the user's start position.  Adjust the size and velocity so that it provides an appropriate challenge. (1)
+2. When the user hits a cube with a laser sword, the cube should be destroyed and a sound should be played.  There are plenty of websites for free sound effects.  You should find one that you like and import it into your project. (1)
+4. Create a `CubeSpawner` that creates new cubes at random time intervals between 0.5 and 2.0 seconds.  You can feel free adjust these time thresholds to reach an appropriate difficulty.  The cubes should also start at the far end of the room, fly towards the user, and should be destroyed when hit by a laser sword. *Hint: you can create a template game object in your scene that is hidden under the floor and then use `GameObject.Instantiate` to copy it.* (1)
 5. The exact X and Y positions of the spawned cubes should be chosen randomly, but should always be within reach of the user's swords when standing at the start position. (1)
-6. If the cube collides with a wall, it should also be destroyed, but no points should be awarded.  We don't want to end up with infinite cubes that would slow down the application! (1)
-7. Cube direction.
-8. Left and right swords.
+6. If a cube collides with a wall, it should also be destroyed, but no sound effect should be played.  We don't want to end up with infinite cubes that would slow down the Quest! (1)
+7. Replace your cubes with the premade one located in the `Prefabs` folder.  This cube has an arrow texture that indicates the direction in which to swing the sword.  Modify your script so that the cube is only destroyed when hit by a sword swung in that direction.  *Hint: you can use the velocity of the rigid body to determine the direction.*  (1)
+7. When a cube is spawned, it should be rotated so that the direction of the arrow is either up, down, left, or right, selected randomly.  (1)
+8. 
 
 **Bonus Challenge:** TBD
 
