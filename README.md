@@ -33,7 +33,7 @@ Graded out of 10 points.
 6. If a cube collides with a wall, it should also be destroyed, but no sound effect should be played.  We don't want to end up with infinite cubes that would slow down the Quest! (1)
 7. Replace your cubes with the premade one located in the `Prefabs` folder.  This cube has an arrow texture that indicates the direction in which to swing the sword.  Modify your script so that the cube is only destroyed when hit by a sword swung in that direction.  *Hint: you can use the velocity of the rigid body to determine the direction.*  (1)
 7. When a cube is spawned, it should be rotated so that the direction of the arrow is either up, down, left, or right, selected randomly.  (1)
-8. 
+8. Finally, modify your `CubeSpawner` so that it LEFT AND RIGHT.
 
 **Bonus Challenge:** TBD
 
